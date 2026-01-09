@@ -1,0 +1,156 @@
+/* =========================
+   APP LAYOUT
+========================= */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: #f4f6f8; /* softer admin bg */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  padding: 28px;
+  overflow-y: auto;
+}
+
+/* =========================
+   CATEGORY TABLE WRAPPER
+========================= */
+.category-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* =========================
+   TABLE HEADER
+========================= */
+.category-table thead th {
+  background: #fafafa;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 18px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* =========================
+   TABLE BODY
+========================= */
+.category-table tbody td {
+  padding: 20px 16px;
+  font-size: 14px;
+  color: #1f2937;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+/* Remove last border */
+.category-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row hover */
+.category-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.category-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+  background: #fff;
+}
+
+/* =========================
+   TITLE
+========================= */
+.category-table td.fw-medium {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.action-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.action-group .btn {
+  min-width: 78px;
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+/* Hover animation */
+.action-group .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+.category-table tbody td.text-muted {
+  font-size: 15px;
+  color: #6b7280;
+}
+
+/* =========================
+   ADD CATEGORY BUTTON
+========================= */
+.btn-primary {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+/* =========================
+   FORM CARD (ADD / EDIT / VIEW)
+========================= */
+.card {
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+}
+
+.card-header {
+  background: #fafafa;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 22px;
+}
+/* Category title column */
+.category-title {
+  max-width: 260px;          /* adjust if needed */
+  white-space: normal;       /* allow wrapping */
+  word-wrap: break-word;     /* old support */
+  overflow-wrap: break-word; /* modern standard */
+  line-height: 1.4;
+}
